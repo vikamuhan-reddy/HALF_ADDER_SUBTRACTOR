@@ -75,4 +75,4 @@ endmodule
 ![WhatsApp Image 2024-03-31 at 19 00 46_42eff1fa](https://github.com/vikamuhan-reddy/HALF_ADDER_SUBTRACTOR/assets/144928933/b2582c6f-4d9d-4197-8a32-500ff6092d87)
 
 ## Result:
-thus executed successfully
+Thus the program is executed successfully.
