@@ -2,11 +2,11 @@
 
 Implementation-of-Half-Adder-and-Half Subtractor-circuit
 
-**AIM:**
+## AIM:
 
 To design a half adder and half subtractor circuit and verify its truth table in Quartus using Verilog programming.
 
-**Equipments Required:**
+## Equipments Required:
 
 Hardware – PCs, Cyclone II , USB flasher 
 
@@ -35,7 +35,9 @@ Figure -02 HALF Subtractor
 
 **Truthtable**
 
-**Procedure**
+![WhatsApp Image 2024-03-31 at 19 17 33_4801cee5](https://github.com/vikamuhan-reddy/HALF_ADDER_SUBTRACTOR/assets/144928933/0cc91e1f-2e4e-43e7-b1d3-38796c9274d7)
+
+## Procedure :
 
 1.	Type the program in Quartus software.
 
@@ -48,14 +50,29 @@ Figure -02 HALF Subtractor
 5.	For different input combinations generate the timing diagram.
 
 
-**Program:**
+## Program:
 
-/* Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
+'''Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
+Developed by:Vikamuhan reddy.N
+RegisterNumber:212223240181'''
 
-Developed by: RegisterNumber:*/
+module half(a,b,sum,carry,D,Bo);
+input a,b;
+output sum,carry,D,Bo; // Outputs sum and carry for half adder:Outputs difference D,Borrow Bo for half subtractor
+xor(sum,a,b);//TYPE HERE THE COMMAND FOR SUM GENERATION IN GATE LEVEL MODELLING
+and(carry,a,b);//TYPE HERE THE COMMAND FOR CARRY GENERATION IN GATE LEVEL MODELLING
+wire abar;
+not(abar,a);
+xor(D,a,b);
+and(Bo,abar,b);//Type logic for half subtractor difference D,Borrow Bo using gate level modelling
+endmodule
 
-**RTL Schematic**
+## RTL Schematic:
+![WhatsApp Image 2024-03-31 at 19 07 18_227c61b6](https://github.com/vikamuhan-reddy/HALF_ADDER_SUBTRACTOR/assets/144928933/06abe3f2-fae5-4b12-8769-33364292c9cb)
 
-**Output/TIMING Waveform**
 
-**Result:**
+## Output/TIMING Waveform:
+![WhatsApp Image 2024-03-31 at 19 00 46_42eff1fa](https://github.com/vikamuhan-reddy/HALF_ADDER_SUBTRACTOR/assets/144928933/b2582c6f-4d9d-4197-8a32-500ff6092d87)
+
+## Result:
+thus executed successfully
